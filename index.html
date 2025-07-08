@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golden Particle Meditation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ヒーリング, 癒し, 瞑想, Golden Particle Master, Meditation">
+    <meta name="keywords" content="">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+　　<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175539393-1"></script>
+　　<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-175539393-1');
+　　</script>
+　　<script data-ad-client="ca-pub-0592338664814275" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">光に包まれて</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://good-inspiration.com/e-learning/" class="nav-link">About</a></li>
+            <!--<li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+  <!-- section -->
+   <section class="site-cover" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center site-vh-100">
+           <div class="col-md-12">
+            <h1 class="site-heading site-animate mb-3">Golden Healing Meditation</h1>
+            <h2 class="h5 site-subheading mb-5 site-animate">光に包まれて</h2>
+             <canvas width="960" height="540" id="myCanvas">Particle JS</canvas>
+        <video autoplay loop muted>
+         <source src="assets/img/lightforyou.mp4" type="video/mp4">
+         </video>
+          <audio src="assets/mp3/Shining Aura.m4a" preload="auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="site-section" id="section-about">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h2 class="h5 site-subheading mb-5 site-animate">光に包まれて</h2>
+         <img src="assets/img/thumnail.png" alt="sound image"><br />
+　　　　　　　<h3 class="h5 site-subheading mb-5 site-animate">SHINING AURA</h3>
+            SHINING AURA : Music by Dahye (healing meditation)<br />
+            <span><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large" data-text="Golden Healing Meditation | 光に包まれて">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span><br /><br />
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9OR9+6HEA9E+1SVU+62ENL" rel="nofollow">
+<img border="0" width="336" height="280" alt="" src="https://www27.a8.net/svt/bgt?aid=210403989392&wid=017&eno=01&mid=s00000008409001019000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3H9OR9+6HEA9E+1SVU+62ENL" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+
+    <!-- END section -->
+
+
+    <footer class="site-footer site-bg-dark site-section">
+          <div class="col-md-12 text-center">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+&copy;<script>document.write(new Date().getFullYear());</script>All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <script data-ad-client="ca-pub-0592338664814275" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- CreateJSのライブラリー読み込み -->
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="libs/particlejs.min.js"></script>
+  <!-- Audio JS -->
+  <script src="audiojs/audio.min.js"></script>
+  <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+  </script>
+   <!-- particleJS -->
+  <script>
+    var particleSystem = null;
+    var stage = null;
+    window.addEventListener("load", function () {
+      stage = new createjs.Stage("myCanvas");
+      particleSystem = new particlejs.ParticleSystem();
+      stage.addChild(particleSystem.container);
+      particleSystem.importFromJson(   
+  {
+    "bgColor": "#00000",
+    "width": 1024,
+    "height": 1024,
+    "emitFrequency": 85,
+    "startX": 521,
+    "startXVariance": 781,
+    "startY": 492,
+    "startYVariance": 656,
+    "initialDirection": 0,
+    "initialDirectionVariance": "360",
+    "initialSpeed": 8.5,
+    "initialSpeedVariance": 17.3,
+    "friction": "0.063",
+    "accelerationSpeed": 0,
+    "accelerationDirection": 199,
+    "startScale": 0.16,
+    "startScaleVariance": 0.8,
+    "finishScale": 0.79,
+    "finishScaleVariance": 0.8,
+    "lifeSpan": 402,
+    "lifeSpanVariance": "27",
+    "startAlpha": "1",
+    "startAlphaVariance": "0",
+    "finishAlpha": "0",
+    "finishAlphaVariance": "0",
+    "shapeIdList": [
+        "blur_circle",
+        "kirakira"
+    ],
+    "startColor": {
+        "hue": 18,
+        "hueVariance": 96,
+        "saturation": 100,
+        "saturationVariance": 0,
+        "luminance": "56",
+        "luminanceVariance": "16"
+    },
+    "blendMode": true,
+    "alphaCurveType": "0",
+    "VERSION": "1.0.0"
+    }
+      );
+
+      createjs.Ticker.framerate = 60;  
+      createjs.Ticker.timingMode = createjs.Ticker.RAF;
+      createjs.Ticker.addEventListener("tick", handleTick);
+    });
+
+    function handleTick() {
+      particleSystem.update();
+      stage.update();
+    }
+  </script>
+
+
+    <script src="js/main.js"></script>
+
+
+  </body>
+</html>
