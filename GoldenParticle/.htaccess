@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/tipsandtips/prompt-creator.online/htpasswd/GoldenParticle/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
